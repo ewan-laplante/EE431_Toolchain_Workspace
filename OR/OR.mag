@@ -1,0 +1,12 @@
+magic
+tech sky130A
+timestamp 1794866069
+use inverter  inverter_0
+timestamp 1790800183
+transform 1 0 3300 0 1 1650
+box -650 -600 800 950
+use NOR  NOR_0
+timestamp 1794605781
+transform 1 0 650 0 1 1200
+box -700 -1250 1350 1200
+<< end >>
