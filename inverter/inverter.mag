@@ -1,0 +1,11 @@
+magic
+tech sky130A
+timestamp 1790195216
+<< error_p >>
+rect -10 0 110 84
+rect 14 -9 15 0
+rect 15 -10 98 -9
+<< nwell >>
+rect -10 0 110 80
+rect 14 -10 15 -9
+<< end >>

@@ -1,0 +1,79 @@
+timestamp 1792615410
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use NAND NAND_0 1 0 -1900 0 1 2400
+use inverter inverter_0 1 0 1300 0 1 1200
+port "GND" 5 -200 400 -200 400 m1
+port "VDD" 3 300 3400 300 3400 m1
+port "Y" 4 2500 1200 2500 1200 li
+port "B" 2 -3100 1500 -3100 1500 p
+port "A" 1 -1000 1900 -1000 1900 p
+node "GND" 0 416.993 -200 400 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 150000 1600 0 0 0 0 0 0 0 0 0 0
+node "VDD" 0 1101.51 300 3400 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 660000 3400 0 0 0 0 0 0 0 0 0 0
+node "Y" 58 599.185 2500 1200 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 180000 2200 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_0_1100#" 667 2936.25 0 1100 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 220000 3400 0 0 620000 5600 0 0 0 0 0 0 0 0 0 0 0 0
+node "B" 434 791.492 -3100 1500 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 90000 2000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "A" 630 1913.34 -1000 1900 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 200000 3400 0 0 240000 2200 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "a_0_1100#" "VDD" 2.45537
+cap "VDD" "A" 6.28563
+cap "a_0_1100#" "A" 273.274
+cap "a_0_1100#" "GND" 1.78585
+cap "Y" "a_0_1100#" 14.0646
+cap "GND" "A" 0.714901
+cap "NAND_0/B" "NAND_0/GND" 2.15493
+cap "NAND_0/GND" "NAND_0/Y" 7.10543e-15
+cap "NAND_0/Y" "NAND_0/GND" 7.04502
+cap "NAND_0/A" "NAND_0/GND" 1.21733
+cap "NAND_0/A" "NAND_0/GND" 1.50836
+cap "NAND_0/Y" "inverter_0/Y" 0.862287
+cap "NAND_0/Y" "inverter_0/VDD" 42.6023
+cap "NAND_0/Y" "NAND_0/GND" 27.2947
+cap "NAND_0/GND" "inverter_0/A" 43.7862
+cap "inverter_0/Y" "NAND_0/GND" 3.92823
+cap "inverter_0/A" "inverter_0/VDD" 200.615
+cap "inverter_0/Y" "inverter_0/VDD" 26.7059
+cap "inverter_0/Y" "inverter_0/A" 0.362311
+cap "inverter_0/Y" "inverter_0/GND" 7.85646
+cap "inverter_0/Y" "inverter_0/VDD" 19.275
+cap "NAND_0/VDD" "NAND_0/B" 16.392
+cap "NAND_0/Y" "NAND_0/B" 189.104
+cap "NAND_0/GND" "NAND_0/B" 5.44896
+cap "NAND_0/A" "NAND_0/VDD" 113.86
+cap "NAND_0/GND" "NAND_0/Y" 36.294
+cap "NAND_0/GND" "NAND_0/VDD" -5.49569
+cap "NAND_0/VDD" "NAND_0/Y" 61.2618
+cap "NAND_0/A" "NAND_0/GND" 7.25028
+cap "NAND_0/A" "NAND_0/Y" 100.496
+cap "inverter_0/Y" "NAND_0/Y" 1.03827
+cap "NAND_0/A" "NAND_0/Y" 3.39096
+cap "NAND_0/VDD" "NAND_0/A" 49.6954
+cap "NAND_0/Y" "NAND_0/GND" 1.70884
+cap "NAND_0/A" "NAND_0/GND" 0.962317
+cap "NAND_0/VDD" "NAND_0/Y" 41.5445
+cap "NAND_0/VDD" "inverter_0/A" 18.8158
+cap "inverter_0/Y" "NAND_0/GND" -0.42721
+cap "inverter_0/A" "A" 0.527961
+cap "NAND_0/VDD" "A" 5.25412
+cap "inverter_0/Y" "inverter_0/A" 1.03827
+cap "NAND_0/VDD" "inverter_0/Y" 0.461389
+cap "inverter_0/VDD" "inverter_0/Y" 0.922779
+cap "NAND_0/VDD" "NAND_0/B" 0.677316
+cap "NAND_0/Y" "NAND_0/VDD" 4.44089e-16
+cap "NAND_0/VDD" "NAND_0/Y" 1.69421
+cap "NAND_0/A" "NAND_0/VDD" 1.84843
+cap "NAND_0/Y" "NAND_0/VDD" -0.868083
+cap "NAND_0/VDD" "NAND_0/A" 0.0362808
+merge "inverter_0/GND" "NAND_0/GND" -488.735 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2000 0 0 0 0 0 0 0 0 0 0
+merge "NAND_0/GND" "GND"
+merge "GND" "VSUBS"
+merge "NAND_0/VDD" "inverter_0/VDD" -637.099 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2400 0 0 0 0 0 0 0 0 0 0
+merge "inverter_0/VDD" "VDD"
+merge "inverter_0/A" "NAND_0/Y" -687.294 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -200 0 0 0 -400 0 0 0 0 0 0 0 0 0 0 0 0
+merge "NAND_0/Y" "a_0_1100#"
+merge "NAND_0/A" "A" -291.997 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -10000 -400 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "NAND_0/B" "B" -68.7221 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -200 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "inverter_0/Y" "Y" -364.328 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -60000 -1000 0 0 0 0 0 0 0 0 0 0 0 0

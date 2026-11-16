@@ -1,0 +1,19 @@
+* NGSPICE file created from AND.ext - technology: sky130A
+
+.subckt inverter A Y VDD GND
+X0 Y A GND GND sky130_fd_pr__nfet_01v8 ad=4 pd=10 as=3 ps=8 w=1 l=0.5
+X1 Y A VDD VDD sky130_fd_pr__pfet_01v8 ad=5 pd=9 as=5 ps=9 w=2 l=0.5
+.ends
+
+.subckt NAND A B Y VDD GND
+X0 VDD A Y VDD sky130_fd_pr__pfet_01v8 ad=6 pd=10 as=2 ps=4 w=2 l=0.5
+X1 GND A a_n200_n1400# GND sky130_fd_pr__nfet_01v8 ad=6 pd=10 as=2 ps=4 w=2 l=0.5
+X2 Y B VDD VDD sky130_fd_pr__pfet_01v8 ad=2 pd=4 as=4 ps=8 w=2 l=0.5
+X3 a_n200_n1400# B Y GND sky130_fd_pr__nfet_01v8 ad=2 pd=4 as=4 ps=8 w=2 l=0.5
+.ends
+
+.subckt AND A B VDD Y GND
+Xinverter_0 NAND_0/Y Y VDD GND inverter
+XNAND_0 A B NAND_0/Y VDD GND NAND
+.ends
+
